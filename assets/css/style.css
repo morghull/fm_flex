@@ -1,3 +1,33 @@
-*{
+* {
   box-sizing: border-box;
+}
+body {
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+.container {
+  border: 5px solid darkcyan;
+}
+.item{
+  /* width: 50px;
+  height: 50px; */
+  min-width: 60px;
+  padding:10px;
+  border: 5px solid tomato;
+  text-align: center;
+}
+.flex-parent{
+  display: flex;
+  min-height: 50vh;
+  max-height: 50vh;
+  
+  flex-flow: nowrap row;
+  
+  justify-content: center;
+  align-items: stretch;
+
+  align-content: center;
+}
+.flex-child{
+  align-self: flex-end;
 }
