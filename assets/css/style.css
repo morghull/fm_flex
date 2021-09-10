@@ -8,26 +8,32 @@ body {
 .container {
   border: 5px solid darkcyan;
 }
-.item{
-  /* width: 50px;
-  height: 50px; */
-  min-width: 60px;
-  padding:10px;
+.item {
+  /* max-width: 100px; */
+  /* width: 70px; */
+  /* min-width: 60px; */
   border: 5px solid tomato;
   text-align: center;
 }
-.flex-parent{
+.flex-parent {
   display: flex;
   min-height: 50vh;
-  max-height: 50vh;
-  
-  flex-flow: nowrap row;
-  
-  justify-content: center;
-  align-items: stretch;
+  max-height: 60vh;
+  align-items: center;
 
-  align-content: center;
+  flex-flow: column wrap;
+
+  justify-content: space-between;
 }
-.flex-child{
-  align-self: flex-end;
+.flex-child {
+  flex-basis: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex: 1 1 100px
+}
+.grow {
+  flex-grow: 5;
+}
+.shrink {
+  flex-shrink: 10;
 }
